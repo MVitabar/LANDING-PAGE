@@ -289,18 +289,36 @@ header {
 
     }
 
+    & form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+
+        & input {
+            border: 1px solid #EEE4E1;
+            border-radius: 8px;
+            padding: 5px;
+            width: 300px;
+        }
+
+        & textarea {
+            border: 1px solid #EEE4E1;
+            width: 300px;
+            height: 150px;
+            border-radius: 8px;
+            padding: 5px;
+        }
+
+        & button {
+            margin: 15px auto;
+
+        }
+    }
+
 
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 500px;
-    gap: 15px;
-
-
-}
 
 #footer {
     background-color: #E7D8C9;
@@ -455,4 +473,8 @@ form {
 
 
     }
+
+
+
+
 }
