@@ -1,0 +1,420 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+
+}
+
+button {
+    background-color: #B2967D;
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    max-width: 150px;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+
+}
+
+h3 {
+    font-size: 48px;
+}
+
+header {
+    background-color: #E7D8C9;
+    color: #fff;
+    display: flex;
+    width: 100vw;
+    height: 60px;
+    padding: 10px 20px;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+
+    & img {
+        max-height: 50px;
+        border-radius: 50%;
+    }
+
+    & #nav {
+        display: flex;
+        align-items: center;
+        padding-right: 20px;
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 20px;
+            list-style: none;
+        }
+
+
+
+
+
+    }
+}
+
+#main {
+    display: grid;
+}
+
+
+#hero {
+    padding-top: 100px;
+    display: flex;
+    background-image: url(./assets/cover.jpg);
+    max-width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    & #title {
+        font-size: 60px;
+        color: #fff;
+        max-width: 80vw;
+    }
+
+    & hr {
+        width: 90%;
+        height: 2px;
+        background-color: #fff;
+        border: none;
+
+    }
+
+    & .description {
+        font-size: 32px;
+        color: #fff;
+        max-width: 80%;
+    }
+
+}
+
+#description {
+
+    background-color: #B2967D;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & ul {
+
+        width: 100vw;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        border-radius: 15px;
+
+        & li {
+            font-size: 24px;
+            max-width: 70%;
+            margin-top: 20px;
+            text-align: center;
+
+        }
+    }
+}
+
+#benefits-title {
+    padding-top: 60px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+#benefits {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-around;
+
+
+    & .benefits-card {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        width: 20vw;
+        height: 150px;
+        border: 2px solid #b2967d8c;
+        border-radius: 12px;
+        padding: 10px;
+        box-shadow: 4px 4px 8px #B2967D;
+        font-size: 24px;
+        margin: 20px 10px;
+
+
+    }
+}
+
+#plans {
+    background-color: #EEE4E1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+
+    & .plans-title {
+        display: flex;
+        text-align: center;
+        width: 80%;
+    }
+
+    & .plan-card {
+        display: flex;
+        flex-direction: column;
+        max-width: 35vw;
+        padding: 20px;
+        gap: 20px;
+        box-shadow: 8px 8px 8px #B2967D;
+        border-radius: 20px;
+
+        & .plan-card-img {
+
+            height: 250px;
+            border-radius: 12px;
+        }
+
+        & .plan-card-title {
+            font-size: 24px;
+            text-align: center;
+
+        }
+
+        & .plan-card-desc {
+            font-size: 16px;
+        }
+    }
+
+
+
+
+}
+
+.btn-cont {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    & button {
+        width: 30vw;
+    }
+}
+
+#faq {
+    background-color: #EEE4E1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 15px;
+    gap: 10px;
+    padding: 15px;
+
+    & .faq-card-box {
+        background-color: #ECF8F8;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        gap: 10px;
+        width: 90vw;
+        border-radius: 8px;
+
+        & .faq-card {
+            background-color: #B2967D;
+            max-width: 90vw;
+            border-radius: 5px;
+
+            & .faq-card-title {
+                font-size: 24px;
+                cursor: pointer;
+
+            }
+
+            & .faq-card-desc {
+                background-color: #E7D8C9;
+
+            }
+
+        }
+    }
+}
+
+#contact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer {
+    background-color: #E7D8C9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 60px;
+}
+
+.answer {
+    display: none;
+}
+
+
+@media(max-width: 1000px) {
+
+    #hero {
+        padding-top: 100px;
+        display: flex;
+        background-image: url(./assets/cover.jpg);
+        background-position-x: -140px;
+        max-width: 100vw;
+        height: 100vh;
+        background-size: cover;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        & #title {
+            font-size: 35px;
+            color: #fff;
+            max-width: 80vw;
+        }
+
+        & hr {
+            width: 90%;
+            height: 2px;
+            background-color: #fff;
+            border: none;
+
+        }
+
+        & .description {
+            font-size: 24px;
+            color: #fff;
+            max-width: 80%;
+        }
+
+    }
+
+    #description {
+
+        background-color: #B2967D;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        & ul {
+
+            width: 100vw;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+
+            & li {
+                font-size: 18px;
+                max-width: 70%;
+                margin-top: 20px;
+                text-align: center;
+
+            }
+        }
+    }
+
+    #benefits {
+        display: grid;
+        justify-items: center;
+        grid-template-columns: 1fr;
+        justify-content: space-around;
+
+
+        & .benefits-card {
+
+            align-items: center;
+            text-align: center;
+            width: 60vw;
+            height: 180px;
+            border: 2px solid #b2967d8c;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 4px 4px 8px #B2967D;
+            font-size: 20px;
+            margin: 10px 3px;
+
+
+        }
+    }
+
+    #plans {
+        background-color: #EEE4E1;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        padding-bottom: 20px;
+
+        & .plans-title {
+            display: flex;
+            text-align: center;
+            width: 80%;
+        }
+
+        & .plan-card {
+            display: flex;
+            flex-direction: column;
+            width: 90vw;
+            padding: 20px;
+            gap: 20px;
+            box-shadow: 8px 8px 8px #B2967D;
+            border-radius: 20px;
+
+            & .plan-card-img {
+
+                height: 250px;
+                border-radius: 12px;
+            }
+
+            & .plan-card-title {
+                font-size: 24px;
+                text-align: center;
+
+            }
+
+            & .plan-card-desc {
+                font-size: 16px;
+            }
+        }
+
+
+
+
+    }
+}
