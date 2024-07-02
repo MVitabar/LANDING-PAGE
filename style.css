@@ -375,11 +375,11 @@ header {
     #plans {
         background-color: #EEE4E1;
         width: 100vw;
-        display: flex;
-        flex-direction: column;
+        display: grid;
+
         align-items: center;
 
-        padding-bottom: 20px;
+        padding: 20px;
 
         & .plans-title {
             display: flex;
@@ -390,14 +390,14 @@ header {
         & .plan-card {
             display: flex;
             flex-direction: column;
-            width: 90vw;
+            max-width: 90vw;
             padding: 20px;
             gap: 20px;
             box-shadow: 8px 8px 8px #B2967D;
             border-radius: 20px;
 
             & .plan-card-img {
-
+                width: 80vw;
                 height: 250px;
                 border-radius: 12px;
             }
